@@ -820,6 +820,7 @@ scene.onOverlapTile(SpriteKind.Player, sprites.dungeon.collectibleRedCrystal, fu
 scene.onOverlapTile(SpriteKind.Player, sprites.dungeon.collectibleInsignia, function (sprite, location) {
     game.over(true)
     music.playMelody("C5 G B A F A C5 B ", 130)
+    info.changeScoreBy(1)
     nextlevel()
 })
 let list: Image[] = []
