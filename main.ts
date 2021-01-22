@@ -297,7 +297,7 @@ controller.B.onEvent(ControllerButtonEvent.Pressed, function () {
 })
 scene.onOverlapTile(SpriteKind.Enemy, sprites.dungeon.collectibleInsignia, function (sprite, location) {
     game.showLongText("you have to kill the enemy first", DialogLayout.Bottom)
-    game.over(true)
+    game.over(false)
 })
 controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
     mySprite3 = sprites.create(img`
